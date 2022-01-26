@@ -1,0 +1,483 @@
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+a {
+    color: #4fa6d5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #45beff;
+    text-decoration: none
+}
+
+.title-hero {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.title-hero-2 {
+    font-size: 80px !important;
+    font-weight: bold;
+}
+
+.desc-hero {
+    font-weight: bold;
+    color: #0079C1;
+    text-align: left;
+}
+
+.oren {
+    color: #FF9300 !important;
+}
+
+.putih {
+    color: #fff !important;
+}
+
+
+/*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+
+#header {
+    height: 80px;
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+    background: #1e4356;
+}
+
+#header.header-transparent {
+    background: none;
+}
+
+#header.header-scrolled {
+    background: rgb(53, 53, 53);
+    height: 80px;
+    box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+#header .logo h1 {
+    font-size: 28px;
+    margin: 0;
+    padding: 4px 0;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#header .logo h1 a,
+#header .logo h1 a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+#header .logo img {
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
+}
+
+#main {
+    margin-top: 80px;
+}
+
+
+/*--------------------------------------------------------------
+  # Nav Menu
+  --------------------------------------------------------------*/
+
+
+/**
+  * Desktop Navigation 
+  */
+
+.navbar {
+    padding: 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+    color: #FF9300;
+}
+
+
+/* Dropdown Button */
+
+.dropbtn {}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #353535;
+    min-width: 160px;
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    margin-left: 20px;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background: none;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+
+#hero {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 130%;
+    height: 95%;
+    background-image: url("../img/hero-bg.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    transform: translateX(-50%) rotate(0deg);
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 130%;
+    height: 96%;
+    background: #68A4C4;
+    opacity: 0.3;
+    z-index: 0;
+    transform: translateX(-50%) translateY(18px) rotate(2deg);
+}
+
+#hero .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero h2 {
+    color: #000;
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#hero p {
+    width: 80%;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    margin: 0 auto 30px auto;
+    color: #000;
+}
+
+#hero .btn-get-started {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #000;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    border: 2px solid #0079C1;
+}
+
+#hero .btn-get-started:hover {
+    background: #0079C1;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+
+section {
+    padding: 60px 0;
+}
+
+.section-bg {
+    background-color: #fff;
+}
+
+.section-sc {
+    background-color: #ececec;
+}
+
+.section-cr {
+    background-color: #FFFBEE;
+}
+
+.section-title-sc {
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: #ececec;
+}
+
+.section-title-lg {
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #68A4C4;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+.comingsoon {
+    background: #353535;
+}
+
+
+/* VISI DAN MISI */
+
+.visi-misi {
+    margin-top: -80px;
+    padding-bottom: 120px;
+}
+
+.visi-misi-title {
+    padding-left: 15px;
+    min-width: 200px;
+    border-left: 4px solid #FF9300;
+    background-color: #FFE89E;
+}
+
+.visi-misi-list {
+    font-size: 20px;
+}
+
+
+/* Title */
+
+.left-oren-title {
+    padding-left: 15px;
+    width: 300px;
+    border-left: 4px solid #FF9300;
+    background-color: #FFE89E;
+}
+
+
+/*--------------------------------------------------------------
+  # Berita
+  --------------------------------------------------------------*/
+
+.card-title {
+    text-align: left;
+    min-height: 80px;
+}
+
+.card-berita {
+    box-shadow: -6px 9px 48px -12px rgba(0, 0, 0, 0.36);
+    -webkit-box-shadow: -6px 9px 48px -12px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: -6px 9px 48px -12px rgba(0, 0, 0, 0.36);
+    border-radius: 5px;
+}
+
+.tengah {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*--------------------------------------------------------------
+  # Berita2
+  --------------------------------------------------------------*/
+
+.card-berita-2 {
+    box-shadow: -6px 9px 48px -12px rgba(0, 0, 0, 0.36);
+    -webkit-box-shadow: -6px 9px 48px -12px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: -6px 9px 48px -12px rgba(0, 0, 0, 0.36);
+    border-radius: 5px;
+}
+
+.btn-oren {
+    border-radius: 25px;
+    background-color: #FF9300;
+    color: #FFFFFF;
+}
+
+.btn-oren:hover {
+    background-color: #fff;
+    color: #FF9300;
+    border: 2px solid #FF9300;
+}
+
+.card-body {
+    font-size: 10px;
+}
+
+.card-title-2 {
+    margin-bottom: 20px;
+}
+
+
+/*--------------------------------------------------------------
+  # Guru
+  --------------------------------------------------------------*/
+
+.card-guru {
+    box-shadow: -6px 9px 48px -12px rgba(0, 0, 0, 0.36);
+    -webkit-box-shadow: -6px 9px 48px -12px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: -6px 9px 48px -12px rgba(0, 0, 0, 0.36);
+    border-radius: 5px;
+}
+
+
+/*--------------------------------------------------------------
+  # Fasilitas
+  --------------------------------------------------------------*/
+
+.fasilitas-title {
+    text-align: center;
+    width: 8em;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 4px solid #FF9300;
+    border-right: 4px solid #FF9300;
+    background-color: #FFE89E;
+}
+
+
+/*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+
+#footer {
+    background: #0b212d;
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+#footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+/*--------------------------------------------------------------
+  # Galeri
+  --------------------------------------------------------------*/
